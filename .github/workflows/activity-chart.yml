@@ -29,7 +29,8 @@ jobs:
         run: node scripts/update-activity-chart.mjs
         env:
           GITHUB_USER: ${{ github.repository_owner }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional classic PAT with read:user, so private contributions are counted.
+          GITHUB_TOKEN: ${{ secrets.ACTIVITY_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Commit if changed
         run: |

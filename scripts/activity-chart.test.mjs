@@ -20,17 +20,39 @@ function buildWeeks(counts, startDate = '2026-01-04') {
   return weeks
 }
 
-test('summarizes totals, weekly sums and the longest streak', () => {
+test('summarizes the total, the longest streak and the last synced day', () => {
   const weeks = buildWeeks([1, 2, 0, 3, 3, 3, 0, 5, 0, 0, 0, 0, 0, 1])
 
   const summary = summarizeContributions(weeks)
 
   assert.equal(summary.total, 18)
-  assert.deepEqual(
-    summary.weeklyTotals.map((week) => week.total),
-    [12, 6],
-  )
   assert.equal(summary.longestStreak, 3)
+  assert.equal(summary.lastDate, '2026-01-17')
+})
+
+test('uses GitHub contribution levels, falling back to activity when missing', () => {
+  const weeks = [
+    {
+      contributionDays: [
+        { date: '2026-01-04', contributionCount: 9, contributionLevel: 'FOURTH_QUARTILE' },
+        { date: '2026-01-05', contributionCount: 0, contributionLevel: 'NONE' },
+        { date: '2026-01-06', contributionCount: 2 },
+      ],
+    },
+  ]
+
+  const levels = summarizeContributions(weeks).calendar[0].map((day) => day.level)
+
+  assert.deepEqual(levels, [4, 0, 1])
+})
+
+test('places each day in the row of its weekday', () => {
+  const svg = renderActivityChart(summarizeContributions(buildWeeks([1, 1])))
+
+  const sundayRow = svg.match(/<rect x="\d+" y="(\d+)"[^>]*><title>1 contribution on 2026-01-04/)
+  const mondayRow = svg.match(/<rect x="\d+" y="(\d+)"[^>]*><title>1 contribution on 2026-01-05/)
+
+  assert.equal(Number(mondayRow[1]) - Number(sundayRow[1]), 20)
 })
 
 test('an empty today does not break the current streak', () => {

@@ -10,7 +10,7 @@ const CALENDAR_QUERY = `
       contributionsCollection {
         contributionCalendar {
           weeks {
-            contributionDays { date contributionCount }
+            contributionDays { date contributionCount contributionLevel }
           }
         }
       }
