@@ -21,20 +21,13 @@ I've spent two decades designing systems that couldn't afford to fall over: tele
 
 These days I'm a solo builder at **Coding Noodles**, finding out how far one person can go with AI as a co-pilot. Linux is home, and I have a soft spot for retro terminal interfaces. You may have noticed.
 
-### `~❯ git log --reverse ~/career`
+### `~❯ ~/bin/activity.sh`
 
-```text
-2006  Reply ................ engineer → architect   telecom billing, rating & order management
-2015  CST Tech ............. team lead              regulatory reporting for financial institutions
-2016  CST Tech ............. CTO                    rebuilt the platform, big-data pipelines for banks
-2020  Klarna ............... competence lead        core-banking architecture & shared APIs
-2021  PeakD ................ co-founder & CTO       community-owned Web3 social and gaming apps
-2021  Coding Noodles ....... founder                (HEAD -> main) you are here
-```
+<img src="assets/activity.svg" alt="Contribution activity over the last 12 months" width="100%">
 
 <img src="assets/noodle-divider.svg" alt="" width="100%">
 
-### `~❯ cat menu.txt --specials`
+### `~❯ ls -lrt ~/projects | pr -2 -t`
 
 Freshly made, served hot. Most of them are open source.
 
@@ -101,20 +94,9 @@ Freshly made, served hot. Most of them are open source.
   </tr>
 </table>
 
-### `~❯ cat menu.txt --sides`
-
-| | Project | What it does |
-|:-:|---|---|
-| 📸 | [nirisnap](https://github.com/sergionoodles/nirisnap) | Omasnap, shamelessly ported to Niri: capture, annotate, redact, OCR. |
-| 🧩 | [skillshard](https://github.com/sergionoodles/skillshard) | One window for every AI coding-agent skill. Security audit before install, update checks against upstream. |
-| ☕ | [token-cafe](https://github.com/sergionoodles/token-cafe) | Noctalia bar meters for AI subscription usage: Codex, Claude Code, OpenCode, OpenRouter and more. |
-| 🔇 | [cut-the-noise](https://github.com/sergionoodles/cut-the-noise) | Local browser extension that calms X, Amazon and Google. Nothing leaves the browser. |
-| 🌦️ | [jackcast](https://github.com/sergionoodles/jackcast) | Weather PWA. Forecasts are never accurate, but at least we made them look great. |
-| 🔐 | [sddm-noodle-terminal](https://github.com/sergionoodles/sddm-noodle-terminal) | Terminal-style SDDM login screen with an animated boot log. |
-
 <img src="assets/noodle-divider.svg" alt="" width="100%">
 
-### `~❯ ls ~/kitchen`
+### `~❯ ~/bin/skills.sh`
 
 <p>
   <img src="https://skillicons.dev/icons?i=rust,ts,vue,nuxtjs,react,threejs,tailwind,vite,tauri,qt,cpp,postgres,sqlite,cloudflare,linux,arch&perline=16" alt="Rust, TypeScript, Vue, Nuxt, React, Three.js, Tailwind, Vite, Tauri, Qt, C++, PostgreSQL, SQLite, Cloudflare, Linux, Arch">
