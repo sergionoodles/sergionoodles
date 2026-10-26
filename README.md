@@ -1,16 +1,7 @@
-<a href="https://codingnoodles.com">
-  <img src="assets/header.svg" alt="Hello, I'm Sergio. Engineer and founder, rewiring 20 years of habits for the AI era." width="100%">
-</a>
+<img src="assets/header.svg" alt="Hello, I'm Sergio. Engineer and founder, rewiring 20 years of habits for the AI era." width="100%">
 
 <p align="center">
-  <a href="https://codingnoodles.com"><img src="https://img.shields.io/badge/codingnoodles.com-0a1216?style=for-the-badge&logo=googlechrome&logoColor=4cc9f0" alt="codingnoodles.com"></a>
   <a href="https://x.com/sergionoodle"><img src="https://img.shields.io/badge/@sergionoodle-0a1216?style=for-the-badge&logo=x&logoColor=f72585" alt="@sergionoodle on X"></a>
-  <a href="mailto:sergio@codingnoodles.com"><img src="https://img.shields.io/badge/sergio@codingnoodles.com-0a1216?style=for-the-badge&logo=maildotru&logoColor=826aed" alt="Email sergio@codingnoodles.com"></a>
-</p>
-
-<p align="center">
-  <sub>20+ years of shipping software the traditional way, 1+ year of shipping it with AI.<br>
-  Building web, desktop and Linux apps, and logging what ships (and what breaks) daily on X 🍜</sub>
 </p>
 
 <img src="assets/noodle-divider.svg" alt="" width="100%">
