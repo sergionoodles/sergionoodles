@@ -435,13 +435,14 @@
   <rect x="1132" y="192" width="16" height="16" rx="3" class="cell l0" style="animation-delay: 1.60s"><title>0 contributions on 2026-10-27</title></rect>
   <rect x="1132" y="212" width="16" height="16" rx="3" class="cell l0" style="animation-delay: 1.62s"><title>0 contributions on 2026-10-28</title></rect>
   <rect x="1132" y="232" width="16" height="16" rx="3" class="cell l1" style="animation-delay: 1.64s"><title>2 contributions on 2026-10-29</title></rect>
+  <rect x="1132" y="252" width="16" height="16" rx="3" class="cell l0" style="animation-delay: 1.66s"><title>0 contributions on 2026-10-30</title></rect>
   </g>
 
   <g clip-path="url(#grid-area)">
     <rect class="scan" x="12" y="148" width="80" height="144" fill="url(#scan-gradient)" />
   </g>
 
-  <text x="92" y="318" class="mono label">last sync 2026-10-29</text>
+  <text x="92" y="318" class="mono label">last sync 2026-10-30</text>
   <text x="1002" y="318" text-anchor="end" class="mono label">less</text>
   <rect x="1012" y="306" width="16" height="16" rx="3" fill="#161f24" />
   <rect x="1032" y="306" width="16" height="16" rx="3" fill="#4d1236" />
